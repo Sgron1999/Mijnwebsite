@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.painting {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    display: flex;            /* Flex container maken */
+    justify-content: center;  /* Horizontaal centreren */
+    align-items: center;      /* Verticaal centreren */
+    flex-direction: column;   /* Stack children vertically */
+}
+
+.painting img {
+    width: 50%;    /* Volledige breedte van de div, aanpassen indien nodig */
+    height: auto;   /* Behoud aspect ratio */
+    max-height: 250px; /* Maximale hoogte, aanpassen indien nodig */
+}
+
+.painting p {
+    text-align: center; /* Centreert de tekst binnen de div */
+    margin-top: 10px;   /* Ruimte tussen de afbeelding en de tekst */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: 10% auto;
+    padding: 90px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+content{
+    align-center
+}
