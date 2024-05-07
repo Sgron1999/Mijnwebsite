@@ -104,6 +104,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
-content{
-    align-center
+.text{
+    display: block;
+    height: 12px;
+    padding: 80px;
+    width: 70%;
 }
