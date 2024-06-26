@@ -34,9 +34,9 @@ nav ul li a {
 }
 
 .gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 .painting img {
-    width: 50%;    /* Volledige breedte van de div, aanpassen indien nodig */
+    width: 100%;    /* Volledige breedte van de div, aanpassen indien nodig */
     height: auto;   /* Behoud aspect ratio */
     max-height: 250px; /* Maximale hoogte, aanpassen indien nodig */
 }
