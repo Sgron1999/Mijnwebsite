@@ -52,11 +52,9 @@ nav ul li a.active {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Zorgt voor maximaal 6 kolommen */
+    grid-template-columns: repeat(6, 1fr); /* Maximaal 6 kolommen */
     gap: 20px;
     padding: 20px;
-    max-width: 1200px; /* Beperkt de totale breedte */
-    margin: 0 auto; /* Centreert de galerie */
 }
 
 .painting {
@@ -76,10 +74,9 @@ nav ul li a.active {
 }
 
 .painting img {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    max-height: 200px; /* Beperkt de hoogte voor betere schaal */
-    object-fit: cover; /* Zorgt ervoor dat de afbeeldingen netjes geschaald worden */
 }
 
 .painting p {
