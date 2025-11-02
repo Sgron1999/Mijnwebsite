@@ -1,85 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <title>Schilderijen</title>
-    <link rel="stylesheet" href="stijl.css">
-</head>
-<body>
-    <header>
-        <h1>My work</h1>
-        <nav>
-            <ul>
-                <li><a href="overmij.html">Artist statement</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="gallery">
-        <div class="painting">
-            <img src="b1.jpg" alt="godin">
-            <p>8 uur 6, Oil on panel 22x79 2023</p>
-        </div>
-                <div class="painting">
-            <img src="b2.jpg" alt="godin">
-            <p>Weerzien, Oil on panel 34x24 2024</p>
-        </div>
-        <div class="painting">
-            <img src="b3.jpg" alt="godin">
-            <p>Herkenning, Oil on panel 22x22 2024</p>
-        </div>
-        <div class="painting">
-           <img src="b4.jpg" alt="godin">
-            <p>Aanwezig, Oil on panel 62x123 2023</p>
-        </div>
-        <div class="painting">
-            <img src="b5.jpg" alt="godin">
-            <p>Brekende wolken, Oil on panel 52x38 2023</p>
-        </div>
-        <div class="painting">
-           <img src="b6.jpg" alt="godin">
-            <p>Hersenschim, Oil on panel 19x17 2024</p>
-        </div>
-        <div class="painting">
-            <img src="b7.jpg" alt="godin">
-            <p>De ontmoeting,  Oil on panel 23x30 2024</p>
-        </div>
-        <div class="painting">
-            <img src="b8.jpg" alt="godin">
-            <p>Fluistering, Oil on panel 33x17 2024</p>
-        </div>
-                <div class="painting">
-            <img src="b9.jpg" alt="godin">
-            <p>Gloei, Oil on panel 47x61 2023</p>
-        </div>
-        <div class="painting">
-            <img src="b10.png" alt="godin">
-            <p>Untitled</p>
-        </div>
-        <div class="painting">
-            <img src="b11.jpg" alt="godin">
-            <p>School, Oil on panel 33x19 2023</p>
-        </div>
-        <div class="painting">
-            <img src="b12.jpg" alt="godin">
-            <p>Untitled, Oil on panel 37x50 2023</p>
-        </div>
-        <div class="painting">
-            <img src="b13.jpg" alt="godin">
-            <p>Untitled, Oil on panel 38x45 2024</p>
-        </div>
-        <!-- Voeg de rest van je schilderijen hier toe op dezelfde manier -->
-    </section>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schilderijen Galerij</title>
+  <link rel="stylesheet" href="stijl.css">
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <header>
+   <h1>Art</h1>
+   <nav>
+    <ul>
+     <li><a href="overmij.html">Artist statement</a></li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+   <section class="gallery">
+    <div class="painting"><img src="b1.jpg" alt="8 uur 6">
+     <p>8 uur 6, Oil on panel 22x79 2023</p>
     </div>
-
-    <footer>
-        <p>Email: Groningergroninger@outlook.com</p>
-        <p>&copy; Sam Groninger 2024</p>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
+    <div class="painting"><img src="b2.jpg" alt="Weerzien">
+     <p>Weerzien, Oil on panel 34x24 2024</p>
+    </div>
+    <div class="painting"><img src="b3.jpg" alt="Herkenning">
+     <p>Herkenning, Oil on panel 22x22 2024</p>
+    </div>
+    <div class="painting"><img src="b4.jpg" alt="Aanwezig">
+     <p>Aanwezig, Oil on panel 62x123 2023</p>
+    </div>
+    <div class="painting"><img src="b5.jpg" alt="Brekende wolken">
+     <p>Brekende wolken, Oil on panel 52x38 2023</p>
+    </div>
+    <div class="painting"><img src="b6.jpg" alt="Hersenschim">
+     <p>Hersenschim, Oil on panel 19x17 2024</p>
+    </div>
+    <div class="painting"><img src="b7.jpg" alt="De ontmoeting">
+     <p>De ontmoeting, Oil on panel 23x30 2024</p>
+    </div>
+    <div class="painting"><img src="b8.jpg" alt="Fluistering">
+     <p>Fluistering, Oil on panel 33x17 2024</p>
+    </div>
+    <div class="painting"><img src="b9.jpg" alt="Gloei">
+     <p>Gloei, Oil on panel 47x61 2023</p>
+    </div>
+    <div class="painting"><img src="b10.png" alt="Untitled">
+     <p>Untitled</p>
+    </div>
+    <div class="painting"><img src="b11.jpg" alt="School">
+     <p>School, Oil on panel 33x19 2023</p>
+    </div>
+    <div class="painting"><img src="b12.jpg" alt="Untitled">
+     <p>Untitled, Oil on panel 37x50 2023</p>
+    </div>
+    <div class="painting"><img src="b13.jpg" alt="Untitled">
+     <p>Untitled, Oil on panel 38x45 2024</p>
+    </div>
+   </section>
+  </main><!-- Modal voor grote weergave -->
+  <div id="myModal" class="modal"><span class="close">×</span> <img class="modal-content" id="img01" alt="Vergroot schilderij">
+  </div>
+  <footer>
+   <p>Email: Groningergroninger@outlook.com</p>
+   <p>© Sam Groninger 2024</p>
+  </footer>
+  <script src="scripts.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99854bac85230a58',t:'MTc2MjEwMzk1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
